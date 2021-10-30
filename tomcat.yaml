@@ -60,12 +60,12 @@
     when:  ansible_facts['os_family'] == "Debian"
   - name: copying addressbook file CentOS
     copy:
-      src: /root/sregitrepo/addressbook.war
+      src: addressbook.war
       dest: /usr/share/tomcat/webapps
     when:  ansible_facts['os_family'] == "RedHat"
   - name: copying addressbook file Ubuntu
     copy:
-      src: /root/sregitrepo/addressbook.war
+      src: addressbook.war
       dest: /var/lib/tomcat9/webapps
     when:  ansible_facts['os_family'] == "Debian"
   - name: starting up tomcat CentOS 

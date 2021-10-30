@@ -25,7 +25,7 @@
       
   - name: Cloning playbook from repo
     ansible.builtin.git:
-      repo: https://github.com/1AishwaryaSH/SRE-project1-Addr.git
+      repo: https://github.com/1AishwaryaSH/playbook1.git
       dest: gitrepo
       
   - name: installing tomcat CentOS
